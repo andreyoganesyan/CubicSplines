@@ -1,0 +1,13 @@
+﻿<Window x:Name="mainWindow" x:Class="CubicSplines.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CubicSplines"
+        mc:Ignorable="d"
+        Title="Cubic Splines" Height="400" Width="600" SizeChanged="mainWindow_SizeChanged">
+    <Canvas x:Name="canvas" MouseDown="canvas_MouseDown" MouseMove="canvas_MouseMove" MouseLeave="canvas_MouseLeave">
+        <Rectangle x:Name="rect" Height="400" Width="600" Panel.ZIndex="-1" Fill="#00000000"/>
+
+    </Canvas>
+</Window>
